@@ -1,17 +1,14 @@
 package exception;
 
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter a Number :");
-		int a = sc.nextInt();
-		// Arithmetic exception
-		int b = 100 / 0;
+//		Scanner sc = new Scanner(System.in);
+//		int b = 100 / 0;
 		try {
-			System.out.println(b);
+			System.out.println(90 / 0);
 
 		} catch (ArithmeticException e) {
 			System.err.println("Cant devide by Zero");
@@ -23,7 +20,7 @@ public class Main {
 		try {
 			Main n1 = null;
 			System.out.println(n1.toString());
-		} catch (Exception e) {
+		} catch (NullPointerException e) {
 			// TODO: handle exception
 			System.err.println("Caught an Error");
 		}
@@ -42,15 +39,27 @@ public class Main {
 		///
 		/// Nested Exeception
 		try {
-			int v = 100 /9 ;
+			int v = 100 / 9;
 			try {
+				int n = Integer.parseInt("76");
+				System.out.println(n);
 
-			} catch (Exception e) {
+			} catch (NumberFormatException e) {
+				System.err.println("Cant convert  it into the Number");
 				// TODO: handle exception
 			}
 
 		} catch (ArithmeticException e) {
 			System.err.println("Cant devide by Zero");
+			// TODO: handle exception
+		}
+		//Number Format Exception
+
+		try {
+			int n = Integer.parseInt("hello");
+
+		} catch (NumberFormatException e) {
+			System.err.println("Cant convert  it into the Number");
 			// TODO: handle exception
 		}
 	}
