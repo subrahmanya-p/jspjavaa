@@ -16,6 +16,7 @@ public class Main3 {
 	        destArr[size] = obj;
 	        size++;
 	    }
+	    //copy ned
 	    static void copyend( ) {
 	    	System.arraycopy(srcArr, 0, destArr, size, srcArr.length/2);
 	    	
