@@ -23,6 +23,7 @@ public class Main3 {
 	    	
 	    	
 	    }
+	    //copy middle
 	    static void  middle() {
 	    	System.arraycopy(srcArr, 1, destArr, 1, srcArr.length-2);
 	    }
