@@ -3,7 +3,7 @@ package collectionss;
 public class Contains {
 	static Object[] arr = { 10, 34, 55, 43, 12, 13, 14, 15 };
 
-	static boolean contains(Object obj) {
+ public	static boolean contains(Object obj) {
 		for (Object element : arr) {
 			if (element != null && element.equals(obj)) {
 				return true;
