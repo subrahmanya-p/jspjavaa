@@ -10,7 +10,7 @@ public class VectorListss {
 		list.add(60);
 		list.add(2, 50);
 		list.add(30);
-	
+	System.out.println(list);
 		
 		System.out.println(list);
 		System.out.println("The Size of the list : " + list.size());
@@ -19,6 +19,7 @@ public class VectorListss {
 		list.set(0, 11);
 		System.out.println("After Replacing the Value of 10  with the 11 : " + list);
 		list.remove(0);
+		
 		System.out.println("After Removing the Value from the 1st index : " + list);
 		list.remove((Object) 50);
 		System.out.println("After Removing the Value  50 : " + list);
