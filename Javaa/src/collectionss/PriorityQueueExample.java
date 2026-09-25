@@ -20,6 +20,6 @@ public class PriorityQueueExample {
 		PriorityQueue q2 = new PriorityQueue();
 		q2.add(Integer.MIN_VALUE);
 		q1.addAll(q2);
-		System.out.println(" Queue  1 After Adding the Queue 2"+q1);
+		System.out.println(" Queue  1 After Adding the Queue 2" + q1);
 	}
 }
