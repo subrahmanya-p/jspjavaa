@@ -16,6 +16,7 @@ public class Main {
 		System.out.println("Is Empty ? :" + m.isEmpty());
 		m.clear();
 		System.out.println("Is Empty ? :" + m.isEmpty());
+		//
 		m.put("a1", 34);
 		m.put("a2", 12);
 		m.put("a1", 39);
