@@ -43,5 +43,17 @@ public class Main {
 			System.out.print(enr.getValue() + " ");
 			System.out.println();
 		}
+System.out.println("+++++++++++++++++");
+		Map<String, Integer> m1 = new HashMap<String, Integer>();
+		m1.put("a9", 34);
+		m1.put("a5", 12);
+		m1.put("a7", null);
+		m.putAll(m1);
+		for (Map.Entry<String, Integer> enr : m.entrySet()) {
+			System.out.print(enr.getKey() + " ");
+			System.out.print(enr.getValue() + " ");
+			System.out.println();
+		}
+
 	}
 }
