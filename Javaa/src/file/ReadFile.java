@@ -15,6 +15,9 @@ public class ReadFile {
 		char ch[] = new char[(int) f1.length()];
 		fReader.read(ch);
 		System.out.println(new String(ch));
+		for (char c : ch) {
+		System.out.println(c);	
+		}
 
 	}
 }
