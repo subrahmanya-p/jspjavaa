@@ -1,5 +1,5 @@
 
-package patterndesign;
+package factory;
 
 public class CarFactoryDesign {
 
