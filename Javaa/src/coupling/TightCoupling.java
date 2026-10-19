@@ -1,15 +1,31 @@
 package coupling;
 
-class Engine1 {
-	void start() {
-		System.out.println("Car engine has been Started");
-	}
+interface Engine2 {
+	void start();
 }
+ class PetrolEngine implements Engine2{
+
+	@Override
+	public void start() {
+		System.out.println("petrol engine");
+	}
+	 
+ }
+  class DieselEngine implements Engine2{
+
+	@Override
+	public void start() {
+		// TODO Auto-generated method stub
+		
+		System.out.println(" DieselEngine engine");
+	}
+	  
+  }
 
 class Car1 {
-	Engine1 engine;
+	Engine2 engine;
 
-	public Car1(Engine1 engine) {
+	public Car1(Engine2 engine) {
 		this.engine = engine;
 	}
 
@@ -23,7 +39,8 @@ class Car1 {
 
 public class TightCoupling {
 	public static void main(String[] args) {
-		Engine1 e1 = new Engine1();
+		
+		Engine2 e1 = new DieselEngine();
 		Car1 c1 = new Car1(e1);
 		c1.drive();
 
